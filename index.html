@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- 
+    Name: David Huynh
+    Email: david_huynh@student.uml.edu
+    Major: C.S (Senior year) in course 91.61 GUI Programming I
+    Date Created: 08/06/2020
+    Short Description: Assigment 7 -  Using the jQuery UI Slider and Tab Widgets
+    
+    Copyright (c) 2020 by David Huynh. All rights reserved
+ -->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>H.W 7</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="bg-info">
+    <div class="container">
+        <h1>Creating an Interactive Dynamic Table using Jquery</h1>
+        <hr>
+        <p> How to Start: Enter the Row/Column number and number to the input boxes. 
+             The input should be in integer and in -10 ~ 10</p>
+        <div class="row">   
+            <div class="mr-5" id="Nav">       
+           <!--  <div class="col-3" id="Nav"> -->
+                <ul class="item">
+                    <li class="tab"><a href="#tab_main">Main Form</a></span>
+                    </li>
+                    <!-- <li class="tab disabled"><a href="#tab_main">Testing Form</a></span>
+                    </li> -->
+                </ul>
+
+                <div id="tab_main">
+                    <form name="input_form" id="input_form" autocomplete="off">
+                        <fieldset>
+<!--                        <ul class="test">
+                                <li>Row numbers:<br>
+                                    <input type="text" id="rowStart" name="rowStart" class="form-control" placeholder="Starting value" > <span class = "error", id="rowStart_error"></span>
+                                    <div id="SliderRowStart"></div>
+                                </li>
+                                <li>
+                                    <input type="text" id="rowEnd" name="rowEnd" class=" mt-3 form-control" placeholder="Ending value"> <span class = "error" id="rowEnd_error"></span>
+                                    <div class="mb-3" id="SliderRowEnd"></div>
+                                </li>
+                                <li>
+                                    Column numbers:<br>
+                                    <input type="text" id="colStart" name="colStart" class="form-control" placeholder="Starting value">  <span class = "error" id="colStart_error"></span>
+                                    <div id="SliderColStart"></div>
+                                </li>
+                                <li>
+                                    <input type="text" id="colEnd"  name="colEnd" class="mt-3 form-control" placeholder="Ending value"> <span class = "error" id="colEnd_error"></span>
+                                    <div id="SliderColEnd"></div>
+                                </li>                                
+                            </ul> -->
+                            Row numbers:<br>
+                            <input type="text" id="rowStart" name="rowStart" class="form-control" placeholder="Starting value" > <span class = "error", id="rowStart_error"></span>
+                            <div id="SliderRowStart"></div>
+                            <input type="text" id="rowEnd" name="rowEnd" class=" mt-3 form-control" placeholder="Ending value"> <span class = "error" id="rowEnd_error"></span>
+                            <div class="mb-3" id="SliderRowEnd"></div>
+                            Column numbers:<br>
+                            <input type="text" id="colStart" name="colStart" class="form-control" placeholder="Starting value">  <span class = "error" id="colStart_error"></span>
+                            <div id="SliderColStart"></div>
+                            <input type="text" id="colEnd"  name="colEnd" class="mt-3 form-control" placeholder="Ending value"> <span class = "error" id="colEnd_error"></span>
+                            <div id="SliderColEnd" class="mb-3"></div>
+                            <input type="submit" id="submit_button" class="btn btn-primary"  value="Create Tab">
+                            <input type="submit" id="delete_button" class="btn btn-primary" value="Delete Tabs">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="col-9"> -->
+                <!-- multiplication table -->
+                <div id="render"></div>
+           <!--  </div> -->
+        </div>
+    </div>
+<!--     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+       <script
+      src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+      integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="js/jquery.validate.js"></script>
+  </body>
+</html>

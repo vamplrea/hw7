@@ -1,0 +1,97 @@
+/*
+    Name: David Huynh
+    Email: david_huynh@student.uml.edu
+    Major: C.S (Senior year) in course 91.61 GUI Programming I
+    Date Created: 08/08/2020
+    Short Description: Assigment 7 - Using the jQuery UI Slider and Tab Widgets
+    Copyright (c) 2020 by David Huynh. All rights reserved*/
+body *{
+  box-sizing: border-box;
+  
+}
+
+ul {
+    list-style: none;
+    margin: 15px 0px 15px 0px;
+    font-weight: bold;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    empty-cells: hide;    
+    position: relative;
+    border-spacing: 1px;
+
+}
+
+
+tr, td {
+    padding: 4px;
+}
+
+/* scrolling for large table */
+#tableout {
+  max-width: 800px;
+  overflow: auto;
+  /*margin*/
+}
+
+
+.error {
+    color: red;
+    padding: 5px 5px 5px 5px;
+}
+
+
+td.both {
+    color: white;
+    background-color: gray;
+}
+
+td.either {
+    color: black;
+    background-color: white;
+}
+
+
+tr td:first-child,
+td.header {
+    color: white;
+    background-color: green;
+    border: white 1px;
+}
+
+#SliderRowStart,
+#SliderRowEnd,
+#SliderColStart,
+#SliderColEnd {
+    margin: 5px;
+    background: grey;
+}
+
+.ui-slider-horizontal {
+    height: 9px;
+    width: 237px;
+}
+
+.ui-slider-handle {
+    width: 32px;
+    margin-left: -16px;
+}
+
+.ui-tabs-nav {
+    background: blue;
+    color: black;
+}
+
+ul.tabs li.current {
+    background: black;
+     color: black;
+}   
+
+/*.disabled {
+    pointer-events:none; 
+    opacity:0.6;        
+}*/
